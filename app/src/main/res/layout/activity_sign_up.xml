@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/tvSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:text="Sign Up"/>
+
+    <EditText
+        android:id="@+id/edFirstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSignup"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:hint="First Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edLastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edFirstname"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:hint="Last Name"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edNIK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edLastname"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:hint="NIK"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edNIK"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:hint="Address"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edAddress"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="15dp"
+        android:hint="Password"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_Signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#FF42ADE9"
+        android:text="Sign Up"
+        android:textSize="30sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#FF42ADE9"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvNamatoko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Shoes Store"
+            android:textSize="20sp"
+            android:layout_marginStart="100dp" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNamatoko"
+            android:text="Email"
+            android:textSize="15sp"
+            android:layout_marginStart="100dp" />
+        <TextView
+            android:id="@+id/arrowback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@+id/tvNamatoko"
+            android:layout_marginStart="130dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

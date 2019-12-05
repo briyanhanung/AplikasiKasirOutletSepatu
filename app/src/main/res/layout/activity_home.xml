@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FF42ADE9"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageViewNamatoko"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_android_black_24dp"
+        android:layout_marginTop="40dp"
+        />
+
+    <TextView
+        android:id="@+id/tvNamatoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shoes_store"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ImageViewNamatoko"
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_shoesstore_gmail_com"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvNamatoko"
+        />
+    <RelativeLayout
+        android:id="@+id/Layout_produk"
+        android:layout_below="@id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ImageViewproduk"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="100dp"
+            android:background="#9942ADE9"
+            android:src="@drawable/sepatu"
+            />
+        <TextView
+            android:id="@+id/tvProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/ImageViewproduk"
+            android:layout_marginStart="90dp"
+            android:text="Product"
+            />
+
+        <ImageView
+            android:id="@+id/ImageViewpayment"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_toEndOf="@+id/ImageViewproduk"
+            android:background="#9942ADE9"
+            android:src="@drawable/payment" />
+        <TextView
+            android:id="@+id/tvPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/ImageViewpayment"
+            android:layout_marginStart="255dp"
+            android:text="Payment"/>
+        <ImageView
+            android:id="@+id/ImageViewHistoryofpayment"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/ImageViewproduk"
+            android:background="#9942ADE9"
+            android:src="@drawable/ic_money" />
+        <TextView
+            android:id="@+id/tvHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/ImageViewHistoryofpayment"
+            android:layout_marginStart="90dp"
+            android:text="History"/>
+
+        <ImageView
+            android:id="@+id/ImageViewProfit"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/ImageViewHistoryofpayment"
+            android:layout_below="@+id/ImageViewpayment"
+            android:background="#9942ADE9"
+            android:src="@drawable/img_profit" />
+        <TextView
+            android:id="@+id/tvProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@+id/ImageViewProfit"
+            android:layout_marginStart="265dp"
+            android:text="Profit"/>
+    </RelativeLayout>
+
+</RelativeLayout>

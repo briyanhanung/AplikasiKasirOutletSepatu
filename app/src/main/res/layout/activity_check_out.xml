@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOut">
+
+    <TextView
+        android:id="@+id/tvCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECKOUT"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/tvBackCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:id="@+id/tvHargacheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 2.016.000"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvCheckout"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvHargacheckout"
+        android:textSize="18sp"
+        android:text="November 27,2019 - 12:45"
+        />
+    <TextView
+        android:id="@+id/tvNamatoko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvTanggal"
+        android:text="Shoes Store"
+        android:textSize="18sp"
+        />
+    <ImageView
+        android:id="@+id/ImageViewCheckout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/sepatu1"
+        android:layout_below="@+id/tvNamatoko"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Air Jordan 1 Hi FlyEase"
+        android:layout_toEndOf="@+id/ImageViewCheckout"
+        android:layout_below="@+id/tvNamatoko"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/tvNamaproduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Air Jordan 1 Hi FlyEase                                 Rp 2.000.000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ImageViewCheckout"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity                                                                                 1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvNamaproduk"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tvSalestax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sales Tax                                                               Rp 16.000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvQuantity"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tvSubtotalcheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtotal                                                            Rp 2.016.000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvSalestax"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tvCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_check_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30dp"
+        />
+
+</RelativeLayout>

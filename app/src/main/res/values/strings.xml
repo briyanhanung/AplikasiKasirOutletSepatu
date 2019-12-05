@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AplikasiKasirOutletSepatu</string>
+    <string name="shoes_store">Shoes Store</string>
+    <string name="email_shoesstore_gmail_com">Email : ShoesStore@gmail.com</string>
+
+    <string-array name="spinner_profit">
+        <item>JAN</item>
+        <item>FEB</item>
+        <item>MAR</item>
+        <item>APR</item>
+        <item>MAY</item>
+        <item>JUN</item>
+        <item>JUL</item>
+        <item>AUG</item>
+        <item>SEP</item>
+        <item>OCT</item>
+        <item>NOV</item>
+        <item>DES</item>
+    </string-array>
+</resources>

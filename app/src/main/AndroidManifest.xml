@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aplikasikasiroutletsepatu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ThankYou"></activity>
+        <activity android:name=".CheckOut" />
+        <activity android:name=".InsertProduct" />
+        <activity android:name=".MainActivityListViewProduk" />
+        <activity android:name=".Profit" />
+        <activity android:name=".HistoryPayment" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Produk" />
+        <activity android:name=".Home" />
+        <activity android:name=".GridHome" />
+        <activity android:name=".BottomNavigation" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

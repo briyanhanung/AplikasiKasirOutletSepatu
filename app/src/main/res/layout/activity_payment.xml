@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <TextView
+        android:id="@+id/tvPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAYMENT"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tvBackPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_arrow_back_black_24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/edSearchPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvPayment"
+        android:hint="Search"/>
+
+    <RelativeLayout
+        android:id="@+id/RLpayment"
+        android:layout_below="@+id/edSearchPayment"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ImageViewProdukpayment"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/sepatu1" />
+        <TextView
+            android:id="@+id/tvNamaproduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Air Jordan 1 Hi FlyEase"
+            android:layout_toEndOf="@+id/ImageViewProdukpayment"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 2.000.000"
+            android:layout_below="@+id/tvNamaproduk"
+            android:layout_toEndOf="@+id/ImageViewProdukpayment"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/tvJmlproduk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tvNamaproduk"
+            android:text="1"
+            android:textSize="18sp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="4dp"
+            />
+        <Button
+            android:id="@+id/btn_kurangiproduct"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:drawableStart="@drawable/ic_indeterminate_check_box_black_24dp"
+            android:layout_toEndOf="@+id/tvNamaproduk"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            />
+        <Button
+            android:id="@+id/btn_tambahproduct"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:drawableStart="@drawable/ic_add_black_24dp"
+            android:layout_toRightOf="@+id/tvNamaproduk"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/btn_kurangiproduct"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_Pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAY NOW"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+        />
+</RelativeLayout>
